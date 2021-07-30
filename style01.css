@@ -1,5 +1,8 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:100,600,700');
+@font-family: 'Raleway', sans-serif;
 .body{
     background-color: #F2F2F2;
+    font-family: 'Raleway', sans-serif;
 }
 .header_container{
     display: flex;
@@ -7,17 +10,70 @@
 	justify-content: space-between;
 	flex-wrap: wrap;
 }
+.reservia{
+    margin-left: 35px;
+}
+h2{
+    font-family: 'Raleway', sans-serif;
+    font-size: 17px;
+    font-weight: bold;
+}
+h3{
+    font-family: 'Raleway', sans-serif;
+    font-size: 12px;
+    font-weight: bolder;
+}
+h4, .rightnav, .footerliste{
+    font-family: 'Raleway', sans-serif;
+    font-weight: normal;
+    font-size: small;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+p{
+    font-family: 'Raleway', sans-serif;
+    font-size: small;
+    margin-bottom: 80px;
+}
 ul{
     display: flex;
     flex-direction: row;
     list-style: none;
 }
-a{
+.rightTop{
     text-decoration: none;
     padding: 20px;
 }
 nav{
     list-style: none;
+    font-family: 'Raleway', sans-serif;
+    margin-right: 15px;
+}
+.haute{
+    margin-left: 35px;
+}
+.searchForm{
+    border: 1px solid rgb(214, 211, 211);
+    border-radius: 0 10px 10px 0;
+    width: 22%;
+    height: 30px;
+    padding-bottom: 6px;
+    margin-left: 35px;
+    text-align: end;
+}
+.placeholder{
+    border: none;
+}
+.send{
+    border: none;
+    color: white;
+    background-color: #0065FC;
+    padding-top: 10px;
+    padding-bottom: 6px;
+    border-radius: 0 10px 10px 0;
+    font-size: 17px;
 }
 .flexcontainer{
     display: flex;
@@ -41,118 +97,581 @@ nav{
     padding: 2px;
     text-align: center;
     flex-wrap: wrap;
+    border-radius: 20px;
+}
+.description1{
+    margin-left: 4px;
+}
+.snapshot{
+    width: 30%;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0px 2px 1px -1px rgb(0 0 0 / 20%), 0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%);
+    margin-bottom: 40px;
+    margin-right: 20px;
+    margin-left: 4px; 
+}
+.containergauche{
+    border-radius: 20px;
+    background:whitesmoke;
+    margin-right: 16px;
+    margin-left: 16px;
+    height: 605px;
+    padding-left: 20px;
+    width: 70%;
+    margin-top: 1%;
+    }
+.containerdroite{
+    border-radius: 20px;
+    background: whitesmoke;
+    margin: 16px;
+    height: 30%;
+    width: 30%;
+    padding-left: 10px;
+    }
+#filters{
+    width: auto;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    }
+.textfilter{
+        margin-top: 5px;
+        font-family: 'Raleway', sans-serif;
+    }
+.titlefilter{
+    padding-right: 30px;
+    padding-left: 14px;
+    margin-left: 20px;
+    font-family: 'Raleway', sans-serif;
+    }
+.filters{
+    display: flex;
+    }
+.innerFilters1{
+    display: flex;
+    margin: 20px 20px 20px 5px;
+    border: 1px solid rgb(214, 211, 211);
+    border-radius: 20px;
+    width: 150px;
+    height: 30px;
+    padding-bottom: 3px;
+    }
+.innerFilters2{
+    display: flex;
+    margin: 20px 20px 20px 5px;
+    border:  1px solid rgb(214, 211, 211);
+    border-radius: 20px;
+    width: 110px;
+    height: 30px;
+    padding-bottom: 3px;  
+}
+.innerFilters3{
+    display: flex;
+    margin: 20px 20px 20px 5px;
+    border:  1px solid rgb(214, 211, 211);
+    border-radius: 20px;
+    width: 140px;
+    height: 30px;
+    padding-bottom: 3px;
+}
+.innerFilters4{
+    display: flex;
+    margin: 20px 20px 20px 5px;
+    border:  1px solid rgb(214, 211, 211);
+    border-radius: 20px;
+    width: 190px;
+    height: 30px;
+    padding-bottom: 3px;
+}
+.textfilter:hover{
+    color: rgb(70, 127, 192);
+    }
+.fa-dog{
+    background: #DEEBFF;
+    border-radius: 45%;
+    width: 35px;
+    height: 30px;
+    padding: 2px;
+    margin-bottom: 5px;
+    color:  #0065FC;
+    font-size: 25px;
+}
+.fa-money-bill-wave{
+    background: #DEEBFF;
+}
+.fa-money-bill-wave{
+    background: #DEEBFF;
+    border-radius: 45%;
+    padding: 4px;
+    color:  #0065FC;
+    margin-right: 5px;
+    font-size: 25px;
+}
+.fa-child{
+    background: #DEEBFF;
+    border-radius: 45%;
+    padding: 4px;
+    color:  #0065FC;
+    margin-right: 5px;
+    font-size: 27px;
+}
+.fa-heart{
+    background: #DEEBFF;
+    border-radius: 45%;
+    padding: 4px;
+    margin-top: 0px;
+    color:  #0065FC;
+    margin-right: 5px;
+    font-size: 25px;
+}
+h3 {
+    text-align: left;
+    margin-left: 10px;
+}
+.prix{
+
+    text-align: left;
+    margin-left: 10px;
+    margin-top: 0px;
+    margin-bottom: 3px;
+   
+}
+.star-rating{
+    font-size: 10px;
+    padding: 10px;
+    text-align: left;
+    margin-left: 0%;
+    color: #0065FC;
+}
+.star1{
+    color: gray;
+    margin-left: 0px;
+}
+.infoIcon{
+    display: flex;
+    align-items: baseline;
+}
+.iconinfo{
+    margin-right: 10px;
+    margin-left: 30px;
+    border: 1px solid rgb(214, 211, 211);
+    border-radius: 50px;
+    width: 2px;
+    height: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.info{
+    font-family: 'Raleway', sans-serif;
+    font-size: small;
+}
+.fa-info{
+    font-size: 10px;
+    color: #0065FC;
+}
+img{
     border-radius: 10px;
 }
-    .snapshot{
-        width: 30%;
-        background: white;
-        border-radius: 20px;
-        box-shadow: 0px 2px 1px -1px rgb(0 0 0 / 20%), 0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%);
-        margin-bottom: 40px;
-        margin-right: 20px;
-    }
-    .containergauche{
-        border-radius: 20px;
-        background:whitesmoke;
-        margin-right: 16px;
-        margin-left: 16px;
-        height: 630px;
-        padding-left: 20px;
-        width: 70%;
-        margin-top: 1%;
-    }
-    .containerdroite{
-        border-radius: 20px;
-        background: whitesmoke;
-        margin: 16px;
-        height: 30%;
-        width: 30%;
-        padding-left: 10px;
-    }
-    .filterItem{
-        border: 2px solid rgb(214, 211, 211);
-        border-radius: 20px;
-        width: 180px;
-        height: 30px;
-    }
-    .fa-dog{
-        background: cyan;
-        border-radius: 50%;
-        padding: 4px;
-    }
-    .fa-money-bill-wave{
-        background: cyan;
-        border-radius: 50%;
-        padding: 4px;
-    }
-    .fa-child{
-        background: cyan;
-        border-radius: 50%;
-        padding: 4px;
-    }
-    .fa-heart{
-        background: cyan;
-        border-radius: 50%;
-        padding: 4px;
-    }
-    img{
-        border-radius: 10px;
+.cannebiere{
+    border-radius: 20px 20px 0px 0px;
+    margin-top: 5px;
+    margin-left: 0px;
+    width: 95%;
+    height: 100px;
+}
+.hotelduport{
+    border-radius: 20px 20px 0px 0px;
+    margin-top: 5px;
+    margin-left: 0px;
+    width: 95%;
+    height: 100px;
+}
+.hotellesmouettes{
+    border-radius: 20px 20px 0px 0px;
+    width: 95%;
+    margin-top: 5px;
+    margin-left: 0px;
+    height: 100px;
+}
+.hoteldelamer{
+    border-radius: 20px 20px 0px 0px;
+    width: 95%;
+    margin-top: 5px;
+    margin-left: 0px;
+    height: 100px;
+}
+.aubergelepanier{
+    border-radius: 20px 20px 0px 0px;
+    width: 95%;
+    margin-top: 5px;
+    margin-left: 0px;
+    height: 100px;
+}
+.hotelchezamina{
+    border-radius: 20px 20px 0px 0px;
+    width: 95%;
+    margin-left: 0px;
+    margin-top: 5px;
+}
+
+.soleiledumatin{
+    border-radius: 20px 0px 0px 20px;
+    width: 40%;
+    height: 160px;
+    margin: 0%;
+    margin-top: 5px;
+    margin-right: 195px;
+}
+.soleile{
+    margin-top: 30p;
+}
+
+.aucoeurdeleau{
+    border-radius: 20px 0px 0px 20px;
+    width: 40%;
+    height: 160px;
+    margin: 0px;
+    margin-top: 5px;
+    margin-right: 195px;
+
+}
+
+.hoteltoutbleu{
+    border-radius: 20px 0px 0px 20px;
+    width: 40%;
+    height: 160px;
+    margin: 0px;
+    margin-top: 5px;
+    margin-right: 195px;
+}
+
+.vieuxport{
+    border-radius: 20px 20px 0px 0px;
+    width: 100%;
+    height: 260px; 
+}
+.fortdepomegues{
+    border-radius: 20px 20px 0px 0px;
+    width: 100%;
+    height: 115px;
+}
+.frioul{
+    border-radius: 20px 20px 0px 0px;
+    width: 100%;
+    height: 85px;
+}
+.parcnational{
+    border-radius: 20px 20px 0px 0px;
+    width: 100%;
+    height: 260px;
+}
+.notredame{
+    border-radius: 20px 20px 0px 0px;
+    width: 100%;
+    height: 100px;
+}
+.parclongchamp{
+    border-radius: 20px 20px 0px 0px;
+    width: 100%;
+    height: 100px;
+}
+.lieu{
+    margin-left: 16px;
+    font-weight: bolder;
+}
+.description2{
+    margin-left: 30px;
+}
+.containermixte{
+    height: 350px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background: white;
+    border-radius: 20px; 
+    margin: 20px;
+}
+.petitcolumn{
+    flex-direction: column;
+    width: 30%;
+    margin-left: 40px;
+        
+}
+.bottomshot{
+    height: 300px;
+    width: 25%;
+    box-shadow: 0px 2px 1px -1px rgb(0 0 0 / 20%), 0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%);
+    border-radius: 20px;
+    margin: 20px;
+    margin-right: 5px;
+    margin-bottom: ;
+}
+.petitcol1a{
+    flex-direction: column;
+    height: 45%;
+    width: 80%;
+    margin: 20px;
+    box-shadow: 0px 2px 1px -1px rgb(0 0 0 / 20%), 0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%);
+    border-radius: 20px;
+}
+.petitcol1b{
+    flex-direction: column;
+    height: 35%;
+    width: 80%;
+    margin: 20px;
+    box-shadow: 0px 2px 1px -1px rgb(0 0 0 / 20%), 0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%);
+    border-radius: 20px;
+}
+.petitcol2{
+    flex-direction: column;
+    height: 40%;
+    width: 80%;
+    margin: 20px;
+    box-shadow: 0px 2px 1px -1px rgb(0 0 0 / 20%), 0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%);
+    border-radius: 20px;
+}
+.topRight{
+    margin-right:5px;
+    position:absolute;
+    margin-left: 160px;
+    text-align: left;
+ }
+.footer{
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: row;
+    align-content: space-around;  
+    height: 200px;
+}
+.footList0{
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 20px;
+    
+}
+.footernav{
+    margin-left: 11%;
+  
+}
+.footerliste1, .footerliste2, .footerliste3{
+    flex-direction: column;
+    font-family: 'Raleway', sans-serif;
+    font-size: small;
+    margin-right: 200px;
+
+}
+@media all and (max-width: 1200px)
+{
+    .containerdroite 
+    {
+        flex-direction: column;
+        max-width: 21%;
+        height: 10%;
+        text-align: left;
+        margin-bottom: 20px;
     }
     .containermixte{
-        height: 350px;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        background: white;
-        border-radius: 20px;
-        
-        margin: 30px;
-    }
-    .petitcolumn{
         flex-direction: column;
-        width: 30%;
-        
+        height: 5%;
+        width: 240%;
+        margin-top: 2%;
+        margin-left: 0%;
+        margin-bottom: 0px;
     }
     .bottomshot{
-        width: 30%;
-        box-shadow: 0px 2px 1px -1px rgb(0 0 0 / 20%), 0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%);
-        border-radius: 20px;
-        margin: 30;
+        height: 190px;
+        margin-left: 3%;
     }
-    .petitcol1{
+    .vieuxport{
+        height: 155px;
+    }
+    .parcnational{
+        height: 155px;
+    }
+    .ur{
+        width: auto;
+        text-align: left;
         flex-direction: column;
-        height: 40%;
-        margin: 30px;
-        box-shadow: 0px 2px 1px -1px rgb(0 0 0 / 20%), 0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%);
-        border-radius: 20px;
+    }
+    .searchForm{
+        flex-direction: row;
+    }
+    .flexcontainer{
+        width: 300%;
+        flex-direction: column; 
+        height: auto;
+
+    }
+    .snapshot{
+        width: 600%;
+        flex-direction: column; 
+        height: auto;
+    }
+    .soleiledumatin, .aucoeurdeleau, .hoteltoutbleu{
+        margin-left: 5px;
+    }
+    .containergauche{
+        width: 20%;
+        flex-direction: column;
+        height: 80%;
+    }
+    .petitcol1a{
+        height: 190px;
+        width: 80%;
+        margin-left: 0%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .petitcol1b{
+        height: 190px;
+        width: 80%;
+        margin-left: 0%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .fortdepomegues{
+        height: 155px;
+        margin-top: 7px;
+    }
+    .frioul{
+        height: 155px;
+        margin-top: 7px;
     }
     .petitcol2{
-        flex-direction: column;
-        height: 45%;
-        margin: 30px;
-        margin-top: 2px;
-        margin-bottom: 30px;
-        box-shadow: 0px 2px 1px -1px rgb(0 0 0 / 20%), 0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%);
-        border-radius: 20px;
+        height: 190px;
+        width: 80%;
+        margin-left: 0%;
+        margin-top: 10px;
+        margin-bottom: 20px;
     }
-    .topRight{
-        margin-right:5px;
-        position:absolute;
-        margin-left: 160px;
-        text-align: left;
+    .notredame{
+        height: 155px;
+    }
+    .parclongchamp{
+        height: 155px;
+
     }
     .footer{
-        background-color: whitesmoke;
-        display: flex;
-        flex-direction: row;
-        align-content: space-around;  
-        height: 200px;
-    }
-    .footliste{
-        margin-right: 15%;
-        margin-left: 2%;
+        height: 50%;
+        flex-direction: column;
         text-align: left;
     }
+    .footernav{
+        margin-left: 8%;
+    }
+    .filterContainer{
+        display: flex;
+        flex-direction: column;
+    }   
+}
 
 
+}
+@media all and (max-width: 576px){
+    .containerdroite{
+        flex-direction: column;
+        max-width: 21%;
+        height: 10%;
+        text-align: left;
+        margin-bottom: 20px;
+     }
+    .containermixte{
+        flex-direction: column;
+        height: 5%;
+        width: 240%;
+        margin-top: 2%;
+        margin-left: 0%;
+        margin-bottom: 0px;
+    }
+    .bottomshot{
+        height: 190px;
+        margin-left: 3%;
+    }
+    .vieuxport{
+        height: 155px;
+    }
+    .parcnational{
+        height: 155px;
+    }
+    .ur{
+         width: auto;
+        text-align: left;
+        flex-direction: column;
+    }
+    .searchForm{
+        flex-direction: row;
+    }
+    .flexcontainer{
+            width: 300%;
+            flex-direction: column; 
+            height: auto;
     
+    }
+    .snapshot{
+            width: 600%;
+            flex-direction: column; 
+            height: auto;
+    }
+    .soleiledumatin, .aucoeurdeleau, .hoteltoutbleu{
+         margin-left: 5px;
+    }
+    .containergauche{
+         width: 20%;
+         flex-direction: column;
+        height: 80%;
+    }
+    .petitcol1a{
+        height: 190px;
+        width: 80%;
+        margin-left: 0%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .petitcol1b{
+        height: 190px;
+        width: 80%;
+        margin-left: 0%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .fortdepomegues{
+        height: 155px;
+         margin-top: 7px;
+    }
+    .frioul{
+        height: 155px;
+        margin-top: 7px;
+    }
+    .petitcol2{
+         height: 190px;
+         width: 80%;
+         margin-left: 0%;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+    .notredame{
+        height: 155px;
+    }
+    .parclongchamp{
+         height: 155px;
+    
+    }
+    .footer{
+        height: 50%;
+        flex-direction: column;
+        text-align: left;
+        }
+        .footernav{
+            margin-left: 8%;
+        }
+        .filterContainer{
+            display: flex;
+            flex-direction: column;
+        }  
+}
+
+
+
+
+
