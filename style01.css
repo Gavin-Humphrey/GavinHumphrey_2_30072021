@@ -12,6 +12,12 @@
 }
 .reservia{
     margin-left: 35px;
+    height: 50px;
+}
+h2{
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
 }
 h2{
     font-family: 'Raleway', sans-serif;
@@ -54,100 +60,103 @@ nav{
 .haute{
     margin-left: 35px;
 }
-.searchForm{
-    border: 1px solid rgb(214, 211, 211);
-    border-radius: 0 10px 10px 0;
-    width: 22%;
-    height: 30px;
-    padding-bottom: 6px;
-    margin-left: 35px;
-    text-align: end;
+.search{
+    width: 35%;
+    display: flex;
+    height: 45px;
+    justify-content: space-between;
+    flex-flow: row nowrap;
+    border-top: 1px solid rgb(214, 211, 211);
+    border-bottom: 1px solid rgb(214, 211, 211);
+    border-radius: 10px 10px 10px 10px;
+    padding: 0;
+    margin-left: 2.5%;
+}  
+@media (max-width: 1200px){
+    .search{
+        width: 40%;
+        display: flex;
+        margin-left: 15%;
+    }
+
+}
+@media all  and (max-width: 992px){
+    .search{
+    width: 60%;
+    margin-left: 11%;
+    display: flex;
+    height: 45px;
+    justify-content: space-between;
+    
+    }
+    .infoIcone{
+        width: 40%;
+        margin-left: auto;
+    }
+
+    .send{
+        width: 50%;
+    }
+
+}
+@media (max-width: 576px){
+    .search{
+        width: 80%;
+        display: flex;
+        margin-left: 7%;
+        margin-right: 5%;
+    }
+
 }
 .placeholder{
     border: none;
+    padding-left: 5%;
+    margin-right: 20%;
+    font-size: 17px;
 }
 .send{
     border: none;
-    color: white;
+    color: #F2F2F2;
     background-color: #0065FC;
     padding-top: 10px;
     padding-bottom: 6px;
     border-radius: 0 10px 10px 0;
-    font-size: 17px;
+    font-size: 15px;
+    cursor: pointer;
 }
-.flexcontainer{
+.infoIcone{
     display: flex;
-    flex-direction: row;
-     justify-content: space-around;
+    padding-left: 5%;
+    padding-top: 12px;
+    padding-right: 5%;
+    border-radius: 10px 0 0 10px;
+    background-color:#F2F2F2;
+    border: none;  
 }
-.aside{
-    display: flex;
-    flex-direction: column;
-    border-radius: 20px;
-    text-align: center;
-    background: white;
-    box-shadow: 0px 2px 1px -1px rgb(0 0 0 / 20%), 0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%);
-    margin-bottom: 16px;
-    margin-right: 8px;
-    height: 170px;
-}
-.hebergementmarseille{ 
-    display: flex;
-    width: 100%;
-    padding: 2px;
-    text-align: center;
-    flex-wrap: wrap;
-    border-radius: 20px;
-}
-.description1{
-    margin-left: 4px;
-}
-.snapshot{
-    width: 30%;
-    background: white;
-    border-radius: 20px;
-    box-shadow: 0px 2px 1px -1px rgb(0 0 0 / 20%), 0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%);
-    margin-bottom: 40px;
-    margin-right: 20px;
-    margin-left: 4px; 
-}
-.containergauche{
-    border-radius: 20px;
-    background:whitesmoke;
-    margin-right: 16px;
-    margin-left: 16px;
-    height: 605px;
-    padding-left: 20px;
-    width: 70%;
-    margin-top: 1%;
-    }
-.containerdroite{
-    border-radius: 20px;
-    background: whitesmoke;
-    margin: 16px;
-    height: 30%;
-    width: 30%;
-    padding-left: 10px;
-    }
-#filters{
+#filter{
     width: auto;
     display: flex;
     align-items: center;
     font-weight: bold;
-    }
+}
+#filters{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+  }
 .textfilter{
         margin-top: 5px;
         font-family: 'Raleway', sans-serif;
-    }
+ }
 .titlefilter{
     padding-right: 30px;
     padding-left: 14px;
     margin-left: 20px;
     font-family: 'Raleway', sans-serif;
-    }
+ }
 .filters{
     display: flex;
-    }
+}   
 .innerFilters1{
     display: flex;
     margin: 20px 20px 20px 5px;
@@ -156,7 +165,12 @@ nav{
     width: 150px;
     height: 30px;
     padding-bottom: 3px;
-    }
+}
+.innerFilters1:hover,
+.innerFilters1:focus{
+    cursor: pointer;
+    transform: scale(1.05);
+}
 .innerFilters2{
     display: flex;
     margin: 20px 20px 20px 5px;
@@ -165,6 +179,11 @@ nav{
     width: 110px;
     height: 30px;
     padding-bottom: 3px;  
+}
+.innerFilters2:hover,
+.innerFilters2:focus{
+    cursor: pointer;
+    transform: scale(1.05);
 }
 .innerFilters3{
     display: flex;
@@ -175,6 +194,11 @@ nav{
     height: 30px;
     padding-bottom: 3px;
 }
+.innerFilters3:hover,
+.innerFilters3:focus{
+    cursor: pointer;
+    transform: scale(1.05);
+}
 .innerFilters4{
     display: flex;
     margin: 20px 20px 20px 5px;
@@ -183,6 +207,11 @@ nav{
     width: 190px;
     height: 30px;
     padding-bottom: 3px;
+}
+.innerFilters4:hover,
+.innerFilters4:focus{
+    cursor: pointer;
+    transform: scale(1.05);
 }
 .textfilter:hover{
     color: rgb(70, 127, 192);
@@ -225,6 +254,10 @@ nav{
     margin-right: 5px;
     font-size: 25px;
 }
+.icone:hover,
+.icone:focus{
+    transfo: scale(1.1);
+}
 h3 {
     text-align: left;
     margin-left: 10px;
@@ -255,7 +288,8 @@ h3 {
 .iconinfo{
     margin-right: 10px;
     margin-left: 30px;
-    border: 1px solid rgb(214, 211, 211);
+    border: 1px solid #F2F2F2;
+    background-color:white;
     border-radius: 50px;
     width: 2px;
     height: 20px;
@@ -272,6 +306,51 @@ h3 {
 }
 img{
     border-radius: 10px;
+}
+
+.flexcontainer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.containergauche{
+    border-radius: 20px;
+    background:whitesmoke;
+    margin-right: 16px;
+    margin-left: 16px;
+    height: 605px;
+    padding-left: 20px;
+    width: 70%;
+    margin-top: 1%;
+}
+.hebergementmarseille{ 
+    display: flex;
+    width: 100%;
+    padding: 2px;
+    text-align: center;
+    flex-wrap: wrap;
+    border-radius: 20px;
+}
+.snapshot{
+    width: 30%;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0px 2px 1px -1px rgb(0 0 0 / 20%), 0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%);
+    margin: 10px;  
+}
+.snapshot:hover,
+.snapshot:focus{
+    cursor: pointer;
+    transform: scale(1.05);
+}
+#les-populaires-icon{
+    float: right;
+    margin-right: 5%;
+}
+.aside:hover,
+.aside:focus{
+    cursor: pointer;
+    transform: scale(1.05);
 }
 .cannebiere{
     border-radius: 20px 20px 0px 0px;
@@ -314,38 +393,155 @@ img{
     margin-left: 0px;
     margin-top: 5px;
 }
+.description1{
+    margin-left: 4px;
+}
+.containerdroite{
+    border-radius: 20px;
+    background: whitesmoke;
+    margin: 10px;
+    height: 605px;
+    width: 25%;
+}
+.aside{
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    background: white;
+    box-shadow: 0px 2px 1px -1px rgb(0 0 0 / 20%), 0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%);
+    margin: 15px;
+    height: 150px;
+}
 
+.plus:hover{
+    cursor: pointer;
+    color: rgb(70, 127, 192);
+}
+.populaires-text{
+    margin-left: 15px;
+}
 .soleiledumatin{
     border-radius: 20px 0px 0px 20px;
     width: 40%;
-    height: 160px;
-    margin: 0%;
-    margin-top: 5px;
-    margin-right: 195px;
+    height: 142px;
+    margin-left: 4px;
 }
-.soleile{
-    margin-top: 30p;
+.soleil{
+    margin-bottom: 30px;
+    align-items: center;
+}
+.topRight{
+    margin-bottom: 30px;
+    align-items: center;
 }
 
 .aucoeurdeleau{
     border-radius: 20px 0px 0px 20px;
     width: 40%;
-    height: 160px;
-    margin: 0px;
-    margin-top: 5px;
-    margin-right: 195px;
+    height: 142px;
+    margin-left: 4px;
 
 }
+.coeurdeleau{
+    margin-bottom: 20px;
+    margin-right: 10px;
 
+}
 .hoteltoutbleu{
     border-radius: 20px 0px 0px 20px;
     width: 40%;
-    height: 160px;
-    margin: 0px;
-    margin-top: 5px;
-    margin-right: 195px;
-}
+    height: 142px;
+    margin-left: 4px;
 
+}
+.bleuetblanc{
+    margin-bottom: 10px;
+    margin-right: 40px;
+}
+.containermixte{
+    height: 350px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background: white;
+    border-radius: 20px; 
+    margin: 20px;
+}
+.petitcolumn{
+    flex-direction: column;
+    width: 30%;
+    margin-left: 40px;      
+}
+.bottomshot1{
+    height: 300px;
+    width: 25%;
+    box-shadow: 0px 2px 1px -1px rgb(0 0 0 / 20%), 0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%);
+    border-radius: 20px;
+    margin: 20px;
+    margin-right: 5px;
+}
+.bottomshot1:hover,
+.bottomshot1:focus{
+    cursor: pointer;
+    box-shadow: 0px 2px 1px -1px rgb(0 0 0 / 20%), 0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%);
+    transform: scale(1.05);
+}
+.bottomshot2{
+    height: 300px;
+    width: 25%;
+    box-shadow: 0px 2px 1px -1px rgb(0 0 0 / 20%), 0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%);
+    border-radius: 20px;
+    margin: 20px;
+    margin-right: 5px;
+}
+.bottomshot2:hover,
+.bottomshot2:focus{
+    cursor: pointer;
+    box-shadow: 0px 2px 1px -1px rgb(0 0 0 / 20%), 0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%);
+    transform: scale(1.05);
+}
+.petitcol1a{
+    flex-direction: column;
+    height: 45%;
+    width: 80%;
+    margin: 20px;
+    box-shadow: 0px 2px 1px -1px rgb(0 0 0 / 20%), 0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%);
+    border-radius: 20px;
+}
+.petitcol1a:hover,
+.petitcol1a:focus{
+    cursor: pointer;
+    box-shadow: 0px 2px 1px -1px rgb(0 0 0 / 20%), 0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%);
+    transform: scale(1.05);
+}
+.petitcol1b{
+    flex-direction: column;
+    height: 35%;
+    width: 80%;
+    margin: 20px;
+    box-shadow: 0px 2px 1px -1px rgb(0 0 0 / 20%), 0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%);
+    border-radius: 20px;
+}
+.petitcol1b:hover,
+.petitcol1b:focus{
+    cursor: pointer;
+    box-shadow: 0px 2px 1px -1px rgb(0 0 0 / 20%), 0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%);
+    transform: scale(1.05);
+}
+.petitcol2{
+    flex-direction: column;
+    height: 40%;
+    width: 80%;
+    margin: 20px;
+    box-shadow: 0px 2px 1px -1px rgb(0 0 0 / 20%), 0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%);
+    border-radius: 20px;
+}
+.petitcol2:hover,
+.petitcol2:focus{
+    cursor: pointer;
+    box-shadow: 0px 2px 1px -1px rgb(0 0 0 / 20%), 0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%);
+    transform: scale(1.05);
+}
 .vieuxport{
     border-radius: 20px 20px 0px 0px;
     width: 100%;
@@ -381,56 +577,10 @@ img{
     font-weight: bolder;
 }
 .description2{
-    margin-left: 30px;
+    margin-left: 35px;
+    margin-top: 30px;
 }
-.containermixte{
-    height: 350px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    background: white;
-    border-radius: 20px; 
-    margin: 20px;
-}
-.petitcolumn{
-    flex-direction: column;
-    width: 30%;
-    margin-left: 40px;
-        
-}
-.bottomshot{
-    height: 300px;
-    width: 25%;
-    box-shadow: 0px 2px 1px -1px rgb(0 0 0 / 20%), 0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%);
-    border-radius: 20px;
-    margin: 20px;
-    margin-right: 5px;
-    margin-bottom: ;
-}
-.petitcol1a{
-    flex-direction: column;
-    height: 45%;
-    width: 80%;
-    margin: 20px;
-    box-shadow: 0px 2px 1px -1px rgb(0 0 0 / 20%), 0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%);
-    border-radius: 20px;
-}
-.petitcol1b{
-    flex-direction: column;
-    height: 35%;
-    width: 80%;
-    margin: 20px;
-    box-shadow: 0px 2px 1px -1px rgb(0 0 0 / 20%), 0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%);
-    border-radius: 20px;
-}
-.petitcol2{
-    flex-direction: column;
-    height: 40%;
-    width: 80%;
-    margin: 20px;
-    box-shadow: 0px 2px 1px -1px rgb(0 0 0 / 20%), 0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%);
-    border-radius: 20px;
-}
+
 .topRight{
     margin-right:5px;
     position:absolute;
@@ -459,219 +609,106 @@ img{
     font-family: 'Raleway', sans-serif;
     font-size: small;
     margin-right: 200px;
-
 }
-@media all and (max-width: 1200px)
-{
-    .containerdroite 
-    {
-        flex-direction: column;
-        max-width: 21%;
-        height: 10%;
-        text-align: left;
-        margin-bottom: 20px;
-    }
-    .containermixte{
-        flex-direction: column;
-        height: 5%;
-        width: 240%;
-        margin-top: 2%;
-        margin-left: 0%;
-        margin-bottom: 0px;
-    }
-    .bottomshot{
-        height: 190px;
-        margin-left: 3%;
-    }
-    .vieuxport{
-        height: 155px;
-    }
-    .parcnational{
-        height: 155px;
-    }
-    .ur{
-        width: auto;
-        text-align: left;
-        flex-direction: column;
-    }
-    .searchForm{
+.footerliste1:hover{
+    color: rgb(70, 127, 192);
+}
+@media (max-width: 1200px){
+     .containergauche{
+          flex-direction: row;
+          flex: 2;
+          order: ;
+          height: 650px;
+          width: auto;
+        }
+     .hebergementmarseille{
+          width: auto;
         flex-direction: row;
-    }
-    .flexcontainer{
-        width: 300%;
-        flex-direction: column; 
-        height: auto;
-
-    }
-    .snapshot{
-        width: 600%;
-        flex-direction: column; 
-        height: auto;
-    }
-    .soleiledumatin, .aucoeurdeleau, .hoteltoutbleu{
-        margin-left: 5px;
-    }
-    .containergauche{
-        width: 20%;
-        flex-direction: column;
-        height: 80%;
-    }
-    .petitcol1a{
-        height: 190px;
-        width: 80%;
-        margin-left: 0%;
-        margin-top: 10px;
-        margin-bottom: 10px;
-    }
-    .petitcol1b{
-        height: 190px;
-        width: 80%;
-        margin-left: 0%;
-        margin-top: 10px;
-        margin-bottom: 10px;
-    }
-    .fortdepomegues{
-        height: 155px;
-        margin-top: 7px;
-    }
-    .frioul{
-        height: 155px;
-        margin-top: 7px;
-    }
-    .petitcol2{
-        height: 190px;
-        width: 80%;
-        margin-left: 0%;
-        margin-top: 10px;
-        margin-bottom: 20px;
-    }
-    .notredame{
-        height: 155px;
-    }
-    .parclongchamp{
-        height: 155px;
-
-    }
-    .footer{
-        height: 50%;
-        flex-direction: column;
-        text-align: left;
-    }
-    .footernav{
-        margin-left: 8%;
-    }
-    .filterContainer{
-        display: flex;
-        flex-direction: column;
-    }   
-}
-
-
-}
-@media all and (max-width: 576px){
-    .containerdroite{
-        flex-direction: column;
-        max-width: 21%;
-        height: 10%;
-        text-align: left;
-        margin-bottom: 20px;
+        flex: 2;
      }
-    .containermixte{
-        flex-direction: column;
-        height: 5%;
-        width: 240%;
-        margin-top: 2%;
-        margin-left: 0%;
-        margin-bottom: 0px;
-    }
-    .bottomshot{
-        height: 190px;
-        margin-left: 3%;
-    }
-    .vieuxport{
-        height: 155px;
-    }
-    .parcnational{
-        height: 155px;
-    }
-    .ur{
-         width: auto;
-        text-align: left;
-        flex-direction: column;
-    }
-    .searchForm{
-        flex-direction: row;
-    }
-    .flexcontainer{
-            width: 300%;
-            flex-direction: column; 
-            height: auto;
-    
+     .snapshot{
+         width: 30%;
+
+     }
+}
+@media (max-width: 992px){
+    .containergauche{
+          flex-direction: row;
+          flex: 3;
+          order: 2;
+          height: 800px;
+          width: auto;
+          margin-top: 700px;
     }
     .snapshot{
-            width: 600%;
-            flex-direction: column; 
-            height: auto;
+        width: 40%;
     }
-    .soleiledumatin, .aucoeurdeleau, .hoteltoutbleu{
-         margin-left: 5px;
+    .aside{
+        flex-direction: row;
+        flex: ;
+        wid: 200%;
+
     }
+
+}
+@media (max-widt: 576px){
     .containergauche{
-         width: 20%;
-         flex-direction: column;
-        height: 80%;
+          flex-direction: column;
+          order: 2;
+          height: 1000px;
+          width: 20%;
+          margin-top: px;
+          margin-right;
+        
     }
-    .petitcol1a{
-        height: 190px;
-        width: 80%;
-        margin-left: 0%;
-        margin-top: 10px;
-        margin-bottom: 10px;
-    }
-    .petitcol1b{
-        height: 190px;
-        width: 80%;
-        margin-left: 0%;
-        margin-top: 10px;
-        margin-bottom: 10px;
-    }
-    .fortdepomegues{
-        height: 155px;
-         margin-top: 7px;
-    }
-    .frioul{
-        height: 155px;
-        margin-top: 7px;
-    }
-    .petitcol2{
-         height: 190px;
-         width: 80%;
-         margin-left: 0%;
-        margin-top: 10px;
-        margin-bottom: 20px;
-    }
-    .notredame{
-        height: 155px;
-    }
-    .parclongchamp{
-         height: 155px;
+    .snapshot{
+        width: 100%;
+        
     
     }
-    .footer{
-        height: 50%;
+    .containergauche{
+        height: 0px;
+        width: 0%;
+
+    }
+    .containerdroit{
+        order: 1;
+     
+    }
+    
+    .asid{
+        display: flex;
+        flex-direction: row;
+        order: ;
+        width: 200%;
+
+    }
+    .containermixte{
         flex-direction: column;
+        width: 250%;
+        margin-top: 550px;
+    }
+    .description2{
+        margin-top: 1450px;
+    }
+    .footer{
+        margin-top: 550px;
+        flex-direction: column;
+        align-items: center;
         text-align: left;
-        }
-        .footernav{
-            margin-left: 8%;
-        }
-        .filterContainer{
-            display: flex;
-            flex-direction: column;
-        }  
+        height: 310px;
+    }
+    .footerliste, .footList0{
+        text-align: left;
+    }
+    .bottomshot1, .bottomshot2{
+        height: 200px;
+    }
+    .vieuxport, .parcnational, .frioul, .fortdepomegues, .notredame, .parclongchamp{
+        height: 160px;
+    }
+    .petitcol1a, .petitcol1b, .petitcol2{
+        height: 200px;
+    }
+    
 }
-
-
-
-
-
