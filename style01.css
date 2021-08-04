@@ -256,7 +256,7 @@ nav{
 }
 .icone:hover,
 .icone:focus{
-    transfo: scale(1.1);
+    transform: scale(1.1);
 }
 h3 {
     text-align: left;
@@ -431,8 +431,9 @@ img{
     align-items: center;
 }
 .topRight{
-    margin-bottom: 30px;
-    align-items: center;
+    margin-bottom: 60px;
+    text-align: left;
+    margin-right: 30%;
 }
 
 .aucoeurdeleau{
@@ -614,55 +615,51 @@ img{
     color: rgb(70, 127, 192);
 }
 @media (max-width: 1200px){
-     .containergauche{
-          flex-direction: row;
-          flex: 2;
-          order: ;
-          height: 650px;
-          width: auto;
-        }
-     .hebergementmarseille{
-          width: auto;
+    .containergauche{
         flex-direction: row;
         flex: 2;
-     }
-     .snapshot{
-         width: 30%;
+        order: 2;
+        height: 650px;
+        width: auto;
+    }
+    .hebergementmarseille{
+        width: auto;
+        flex-direction: row;
+        flex: 2;
+    }
+    .snapshot{
+        width: 30%;
 
-     }
+    }
 }
 @media (max-width: 992px){
     .containergauche{
-          flex-direction: row;
-          flex: 3;
-          order: 2;
-          height: 800px;
-          width: auto;
-          margin-top: 700px;
+        flex-direction: row;
+        flex: 3;
+        order: 2;
+        height: 800px;
+        width: auto;
+        margin-top: 700px;
     }
     .snapshot{
         width: 40%;
     }
     .aside{
         flex-direction: row;
-        flex: ;
-        wid: 200%;
+        width: 100%;
 
     }
 
 }
 @media (max-widt: 576px){
     .containergauche{
-          flex-direction: column;
-          order: 2;
-          height: 1000px;
-          width: 20%;
-          margin-top: px;
-          margin-right;
-        
+        flex-direction: column;
+        order: 2;
+        height: 1000px;
+        width: 20%; 
     }
     .snapshot{
-        width: 100%;
+        width: 80%;
         
     
     }
@@ -676,11 +673,11 @@ img{
      
     }
     
-    .asid{
+    .aside{
         display: flex;
         flex-direction: row;
-        order: ;
-        width: 200%;
+        order: 1;
+        width: 120%;
 
     }
     .containermixte{
@@ -710,5 +707,3 @@ img{
     .petitcol1a, .petitcol1b, .petitcol2{
         height: 200px;
     }
-    
-}
