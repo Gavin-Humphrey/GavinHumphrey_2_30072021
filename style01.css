@@ -649,30 +649,47 @@ img{
         width: 100%;
 
     }
-
 }
-@media (max-widt: 576px){
-    .containergauche{
+@media (max-width: 576px){
+    .footer {
         flex-direction: column;
-        order: 2;
-        height: 1000px;
-        width: 20%; 
     }
     .snapshot{
+        width: 40%;
+    }
+    .aside{
+        flex-direction: row;
+    }
+    .containermixte{
+        flex-direction: column;
+    }
+    .bottomshot1, .petitcol1a, .petitcol1b, .bottomshot2, .petitcol2{
+        height: 100%;
+        width: 100%;
+    }
+    .vieuxport, .fortdepomegues, .frioul, .parcnational, .notredame, .parclongchamp{
+        height: 150px;
+    }
+    .petitcolumn {
+        width: 100%;
+        margin-left: 0;
+    }
+    .search{
         width: 80%;
-        
-    
+        margin-left: 2%;
+        margin-right: 0%;
+    }
+    .placeholder {
+        margin-right: 0;
+        width: 170px;
     }
     .containergauche{
         height: 0px;
         width: 0%;
-
     }
     .containerdroit{
-        order: 1;
-     
+    order: 1;
     }
-    
     .aside{
         display: flex;
         flex-direction: row;
@@ -696,14 +713,6 @@ img{
         height: 310px;
     }
     .footerliste, .footList0{
-        text-align: left;
+    text-align: left;
     }
-    .bottomshot1, .bottomshot2{
-        height: 200px;
-    }
-    .vieuxport, .parcnational, .frioul, .fortdepomegues, .notredame, .parclongchamp{
-        height: 160px;
-    }
-    .petitcol1a, .petitcol1b, .petitcol2{
-        height: 200px;
-    }
+}
