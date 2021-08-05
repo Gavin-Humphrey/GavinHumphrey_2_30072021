@@ -1,5 +1,6 @@
-@import url('https://fonts.googleapis.com/css?family=Raleway:100,600,700');
-@font-family: 'Raleway', sans-serif;
+url('https://fonts.googleapis.com/css?family=Raleway:100,600,700');
+@font-family: 'Raleway', bold, sans-serif;
+
 .body{
     background-color: #F2F2F2;
     font-family: 'Raleway', sans-serif;
@@ -17,12 +18,7 @@
 h2{
     font-family: 'Raleway', sans-serif;
     font-size: 20px;
-    font-weight: bold;
-}
-h2{
-    font-family: 'Raleway', sans-serif;
-    font-size: 17px;
-    font-weight: bold;
+    font-weight: bolder;
 }
 h3{
     font-family: 'Raleway', sans-serif;
@@ -132,6 +128,7 @@ nav{
     border-radius: 10px 0 0 10px;
     background-color:#F2F2F2;
     border: none;  
+    width: 20px;
 }
 #filter{
     width: auto;
@@ -309,19 +306,17 @@ img{
 }
 
 .flexcontainer{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 16px;
 }
 .containergauche{
     border-radius: 20px;
     background:whitesmoke;
-    margin-right: 16px;
-    margin-left: 16px;
-    height: 605px;
     padding-left: 20px;
     width: 70%;
-    margin-top: 1%;
 }
 .hebergementmarseille{ 
     display: flex;
@@ -399,18 +394,25 @@ img{
 .containerdroite{
     border-radius: 20px;
     background: whitesmoke;
-    margin: 10px;
-    height: 605px;
     width: 25%;
 }
 .aside{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    position: relative;
+    padding: 5px;
     border-radius: 20px;
     background: white;
     box-shadow: 0px 2px 1px -1px rgb(0 0 0 / 20%), 0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%);
     margin: 15px;
     height: 150px;
+}
+
+.aside a{
+    display: block;
+    position: relative;
+    width: 40%;
+    min-width: 89px;
 }
 
 .plus:hover{
@@ -422,26 +424,26 @@ img{
 }
 .soleiledumatin{
     border-radius: 20px 0px 0px 20px;
-    width: 40%;
-    height: 142px;
-    margin-left: 4px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 .soleil{
     margin-bottom: 30px;
     align-items: center;
 }
 .topRight{
-    margin-bottom: 60px;
-    text-align: left;
-    margin-right: 30%;
+    margin-bottom: 30px;
+    align-items: center;
 }
 
 .aucoeurdeleau{
     border-radius: 20px 0px 0px 20px;
-    width: 40%;
-    height: 142px;
-    margin-left: 4px;
-
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 .coeurdeleau{
     margin-bottom: 20px;
@@ -450,9 +452,10 @@ img{
 }
 .hoteltoutbleu{
     border-radius: 20px 0px 0px 20px;
-    width: 40%;
-    height: 142px;
-    margin-left: 4px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 
 }
 .bleuetblanc{
@@ -460,7 +463,6 @@ img{
     margin-right: 40px;
 }
 .containermixte{
-    height: 350px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -583,17 +585,17 @@ img{
 }
 
 .topRight{
-    margin-right:5px;
-    position:absolute;
-    margin-left: 160px;
     text-align: left;
  }
 .footer{
     background-color: whitesmoke;
     display: flex;
     flex-direction: row;
-    align-content: space-around;  
-    height: 200px;
+    align-content: space-around; 
+}
+.footliste{
+    max-width: 275px;
+    width: 100%;
 }
 .footList0{
     flex-direction: row;
@@ -602,25 +604,24 @@ img{
     
 }
 .footernav{
-    margin-left: 11%;
+    margin-left: 15%;
   
 }
 .footerliste1, .footerliste2, .footerliste3{
     flex-direction: column;
     font-family: 'Raleway', sans-serif;
     font-size: small;
-    margin-right: 200px;
+    margin-right: 20px;
 }
 .footerliste1:hover{
     color: rgb(70, 127, 192);
 }
+
+
+/*-------- RESPONSIVE -------*/
 @media (max-width: 1200px){
     .containergauche{
         flex-direction: row;
-        flex: 2;
-        order: 2;
-        height: 650px;
-        width: auto;
     }
     .hebergementmarseille{
         width: auto;
@@ -629,25 +630,21 @@ img{
     }
     .snapshot{
         width: 30%;
-
     }
 }
 @media (max-width: 992px){
+    .flexcontainer{
+        flex-direction: column;
+    }
+    .containerdroite{
+        width: 100%;
+    }
     .containergauche{
         flex-direction: row;
         flex: 3;
         order: 2;
-        height: 800px;
-        width: auto;
-        margin-top: 700px;
-    }
-    .snapshot{
-        width: 40%;
-    }
-    .aside{
-        flex-direction: row;
         width: 100%;
-
+        margin-top: 40px;
     }
 }
 @media (max-width: 576px){
@@ -676,43 +673,31 @@ img{
     }
     .search{
         width: 80%;
-        margin-left: 2%;
-        margin-right: 0%;
+        margin-left: 7%;
+        margin-right: 5%;
     }
     .placeholder {
         margin-right: 0;
         width: 170px;
     }
-    .containergauche{
-        height: 0px;
-        width: 0%;
+    .haute, .reservia, .iconinfo {
+        margin-left: 0;
     }
-    .containerdroit{
-    order: 1;
+    .footerliste1, .footerliste2, .footerliste3 {
+        margin-right: 0;
     }
-    .aside{
-        display: flex;
-        flex-direction: row;
-        order: 1;
-        width: 120%;
-
+    .containergauche, .containerdroite {
+        margin-left: 0;
+        margin-right: 0;
+        padding: 0;
     }
-    .containermixte{
-        flex-direction: column;
-        width: 250%;
-        margin-top: 550px;
+    .rightnav{
+        padding: 0;
     }
-    .description2{
-        margin-top: 1450px;
+    .snapshot{
+        width: 100%;
     }
-    .footer{
-        margin-top: 550px;
-        flex-direction: column;
-        align-items: center;
-        text-align: left;
-        height: 310px;
-    }
-    .footerliste, .footList0{
-    text-align: left;
+    .footernav{
+        margin-left: 15%;
     }
 }
