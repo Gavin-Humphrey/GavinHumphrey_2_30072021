@@ -22,7 +22,7 @@ h2{
 }
 h3{
     font-family: 'Raleway', sans-serif;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: bolder;
 }
 h4, .rightnav, .footerliste{
@@ -37,6 +37,7 @@ a{
 p{
     font-family: 'Raleway', sans-serif;
     font-size: small;
+    font-weight: bolder;
     margin-bottom: 80px;
 }
 ul{
@@ -305,7 +306,7 @@ img{
     border-radius: 10px;
 }
 
-.flexcontainer{
+.accomodations{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -342,8 +343,8 @@ img{
     float: right;
     margin-right: 5%;
 }
-.aside:hover,
-.aside:focus{
+.aside1:hover,
+.aside1:focus{
     cursor: pointer;
     transform: scale(1.05);
 }
@@ -391,12 +392,12 @@ img{
 .description1{
     margin-left: 4px;
 }
-.containerdroite{
+.aside{
     border-radius: 20px;
     background: whitesmoke;
     width: 25%;
 }
-.aside{
+.aside1{
     display: flex;
     flex-direction: row;
     position: relative;
@@ -408,7 +409,7 @@ img{
     height: 150px;
 }
 
-.aside a{
+.aside1 a{
     display: block;
     position: relative;
     width: 40%;
@@ -462,7 +463,7 @@ img{
     margin-bottom: 10px;
     margin-right: 40px;
 }
-.containermixte{
+.activites{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -597,14 +598,10 @@ img{
     max-width: 275px;
     width: 100%;
 }
-.footList0{
-    flex-direction: row;
-    justify-content: space-between;
-    margin-top: 20px;
-    
-}
 .footernav{
     margin-left: 15%;
+    font-size: large;
+    font-weight: bolder;
   
 }
 .footerliste1, .footerliste2, .footerliste3{
@@ -616,7 +613,6 @@ img{
 .footerliste1:hover{
     color: rgb(70, 127, 192);
 }
-
 
 /*-------- RESPONSIVE -------*/
 @media (max-width: 1200px){
@@ -633,10 +629,10 @@ img{
     }
 }
 @media (max-width: 992px){
-    .flexcontainer{
+    .accomodations{
         flex-direction: column;
     }
-    .containerdroite{
+    .aside{
         width: 100%;
     }
     .containergauche{
@@ -654,10 +650,10 @@ img{
     .snapshot{
         width: 40%;
     }
-    .aside{
+    .aside1{
         flex-direction: row;
     }
-    .containermixte{
+    .activites{
         flex-direction: column;
     }
     .bottomshot1, .petitcol1a, .petitcol1b, .bottomshot2, .petitcol2{
@@ -686,7 +682,7 @@ img{
     .footerliste1, .footerliste2, .footerliste3 {
         margin-right: 0;
     }
-    .containergauche, .containerdroite {
+    .containergauche, .aside {
         margin-left: 0;
         margin-right: 0;
         padding: 0;
@@ -696,6 +692,9 @@ img{
     }
     .snapshot{
         width: 100%;
+    }
+    .plus{
+        margin-left: 5%;
     }
     .footernav{
         margin-left: 15%;
