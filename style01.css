@@ -20,12 +20,13 @@ h1{
 }
 h2{
     font-family: 'Raleway', sans-serif;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: bolder;
+    
 }
 h3{
     font-family: 'Raleway', sans-serif;
-    font-size: 13px;
+    font-size: 14px;
     font-weight: bold;
 }
 h4, .rightnav, .footerliste{
@@ -290,7 +291,7 @@ nav{
 .icone:focus{
     transform: scale(1.1);
 }
-h2 {
+h2{
     text-align: left;
     margin-left: 10px;
 }
@@ -446,6 +447,7 @@ img{
     box-shadow: 0px 2px 1px -1px rgb(0 0 0 / 20%), 0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%);
     margin: 15px;
     height: 150px;
+    
 }
 .img2{
     border-radius: 20px 0px 0px 20px;
@@ -453,6 +455,7 @@ img{
     height: 95%;
     object-fit: cover;
     width: 35%;
+
 }
 
 .aside-text{
@@ -597,7 +600,7 @@ img{
 .vieuxport{
     border-radius: 20px 20px 0px 0px;
     width: 100%;
-    height: 260px; 
+    height: 250px; 
 }
 .fortdepomegues{
     border-radius: 20px 20px 0px 0px;
@@ -612,7 +615,7 @@ img{
 .parcnational{
     border-radius: 20px 20px 0px 0px;
     width: 100%;
-    height: 260px;
+    height: 250px;
 }
 
 .notredame{
@@ -631,7 +634,7 @@ img{
 }
 .description2{
     margin-left: 35px;
-    margin-top: 30px;
+    margin-top: 40px;
 }
 .topRight{
     text-align: left;
@@ -640,46 +643,38 @@ img{
     background-color: whitesmoke;
     display: flex;
     flex-direction: row;
-    align-content: space-around;
 }
-.footlist{
-	width: 00%;
+
+.footliste{
+	width: 100%;
 	height: 40vh;
 	margin: 0; 
     padding: 0;
-    margin-left: 0%;
+    margin-left: 0;
     margin-right: 30%;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin: 0 auto;
-}
-.footerliste{
+    box-sizing: border-box;
     display: flex;
-    flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
     margin: 0 auto;
-    margin-top: 20px;
-
 }	
 .footer-heading{
     display: flex;
+    justify-content: left;
     flex-direction: column;
-    margin-right: 256px;
-    margin-bottom: 2rem;
-}
-.footer-heading h2{
-    margin-bottom: 32px;
-    margin-left: 0%;
-    font-weight: bolder;
-    font-size: 18px;
+    margin-right: 15%;
+    margin-top: 30px;
+    margin-left: 3%;
 }
 .footer-heading a{
-    margin-bottom: 1rem;
+    margin-bottom: 16px;
 }
 .footer-heading a:hover{
     cursor: pointer;
     color: rgb(70, 127, 192);;
+}
+.footer-heading h2{
+    margin-left: 0%;
 }
 
 /*-------- RESPONSIVE -------*/
@@ -688,7 +683,7 @@ img{
         flex-direction: row;
     }
     h3{
-        font-size: 10px;
+        font-size: 12px;
     }
     .hebergementmarseille{
         width: auto;
@@ -698,12 +693,32 @@ img{
     .snapshot{
         width: 30%;
     }
+    .footerliste{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        margin-top: 20px;
+    }
     
     
 }
 @media (max-width: 992px){
     .accomodations{
         flex-direction: column;
+    }
+    .footerliste{
+        width: auto;
+        margin-right: 0%;
+        margin-left: 0%;
+    }
+    .footer-heading h2{
+        font-size: 16px;
+    }
+    .footer-heading a{
+        font-size: 14px;
+        flex-wrap: wrap;
     }
     .aside{
         width: 100%;
@@ -721,7 +736,14 @@ img{
     h3{
         font-size: 10px;
     }
-    
+    .footerliste{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        margin-top: 20px;
+    }
 }
 @media (max-width: 576px){
     .footer {
@@ -730,14 +752,11 @@ img{
     .footerliste{
         margin-left: -5%;
     }
-    h1{
-        font-size: 17px;
+    .snapshot{
+        width: 40%;
     }
     h3{
         font-size: 14px;
-    }
-    .snapshot{
-        width: 40%;
     }
     .aside1{
         flex-direction: row;
@@ -798,15 +817,6 @@ img{
     .haute, .reservia, .iconinfo {
         margin-left: 0;
     }
-    h2{
-        font-size: 14px;
-    }
-    p, a{
-        font-size: 12px;
-    }
-    .footer-heading{
-        margin-left: 10%;
-    }
     .containergauche, .aside {
         margin-left: 0;
         margin-right: 0;
@@ -833,5 +843,11 @@ img{
     }
     .plus{
         margin-left: 2%;
+    }
+    .footerliste{
+        margin-top: 5px;
+    }
+    .footer-heading{
+        margin-top: 0px;
     }
 }
