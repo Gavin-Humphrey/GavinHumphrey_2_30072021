@@ -26,12 +26,13 @@ h2{
 h3{
     font-family: 'Raleway', sans-serif;
     font-size: 13px;
-    font-weight: bolder;
+    font-weight: bold;
 }
 h4, .rightnav, .footerliste{
     font-family: 'Raleway', sans-serif;
     font-weight: normal;
     font-size: small;
+
 }
 a{
     text-decoration: none;
@@ -40,7 +41,7 @@ a{
 p{
     font-family: 'Raleway', sans-serif;
     font-size: small;
-    font-weight: bolder;
+    font-weight: normal;
     margin-bottom: 80px;
 }
 ul{
@@ -48,11 +49,19 @@ ul{
     flex-direction: row;
     list-style: none;
 }
-.rightTop{
+.rightTop1, .rightTop2, .rightTop3{
     text-decoration: none;
+    font-weight: lighter;
     padding: 20px;
 }
-.rightTop:hover{
+.rightTop1{
+    color: #0065FC;
+}
+.rightTop3{
+    color: #0065FC;
+    font-weight: bolder;
+}
+.rightTop1:hover, .rightTop2:hover, .rightTop3:hover{
     cursor: pointer;
     color: rgb(70, 127, 192);
 }
@@ -63,6 +72,7 @@ nav{
 }
 .haute{
     margin-left: 35px;
+    margin-top: 50px;
 }
 .search{
     width: 35%;
@@ -75,7 +85,8 @@ nav{
     border-radius: 10px 10px 10px 10px;
     padding: 0;
     margin-left: 2.5%;
-}  
+}
+ 
 @media (max-width: 1200px){
     .search{
         width: 40%;
@@ -84,7 +95,7 @@ nav{
     }
 
 }
-@media all  and (max-width: 992px){
+@media all and (max-width: 992px){
     .search{
     width: 60%;
     margin-left: 11%;
@@ -121,6 +132,7 @@ nav{
     border: none;
     color: #F2F2F2;
     background-color: #0065FC;
+    position: relative;
     padding-top: 10px;
     padding-bottom: 6px;
     border-radius: 0 10px 10px 0;
@@ -163,17 +175,17 @@ nav{
     display: flex;
     flex-flow: row wrap;
     align-items: center;
-  }
+}
 .textfilter{
     margin-top: 5px;
     font-family: 'Raleway', sans-serif;
- }
+}
 .titlefilter{
     padding-right: 30px;
     padding-left: 14px;
     margin-left: 20px;
     font-family: 'Raleway', sans-serif;
- }
+}
 .filters{
     display: flex;
 }   
@@ -235,7 +247,7 @@ nav{
 }
 .textfilter:hover{
     color: rgb(70, 127, 192);
-    }
+}
 .fa-dog{
     background: #DEEBFF;
     border-radius: 45%;
@@ -628,38 +640,46 @@ img{
     background-color: whitesmoke;
     display: flex;
     flex-direction: row;
-    align-content: space-around; 
+    align-content: space-around;
 }
-.footliste{
-	width: 100%;
+.footlist{
+	width: 00%;
 	height: 40vh;
 	margin: 0; 
     padding: 0;
-    margin-left: 0;
+    margin-left: 0%;
     margin-right: 30%;
-    box-sizing: border-box;
-    display: flex;
     justify-content: center;
     flex-wrap: wrap;
     margin: 0 auto;
+}
+.footerliste{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    margin-top: 20px;
+
 }	
 .footer-heading{
     display: flex;
-    justify-content: left;
     flex-direction: column;
-    margin-right: 15%;
-    margin-top: 30px;
-    margin-left: 3%;
+    margin-right: 256px;
+    margin-bottom: 2rem;
 }
-.footer-a{
-    margin-bottom: 16px;
+.footer-heading h2{
+    margin-bottom: 32px;
+    margin-left: 0%;
+    font-weight: bolder;
+    font-size: 18px;
 }
-.footer-a:hover{
+.footer-heading a{
+    margin-bottom: 1rem;
+}
+.footer-heading a:hover{
     cursor: pointer;
     color: rgb(70, 127, 192);;
-}
-.footer-text{
-    margin-left: 0%;
 }
 
 /*-------- RESPONSIVE -------*/
@@ -701,19 +721,14 @@ img{
     h3{
         font-size: 10px;
     }
-    .footer-heading{
-        width: 100%;
-        margin-left: 1%;
-        margin-right: 1%;
-    }
-    .footerliste{
-        margin-right: 3%;
-        margin-left: 3%;
-    }
+    
 }
 @media (max-width: 576px){
     .footer {
         flex-direction: column;
+    }
+    .footerliste{
+        margin-left: -5%;
     }
     h1{
         font-size: 17px;
@@ -727,8 +742,15 @@ img{
     .aside1{
         flex-direction: row;
     }
+    .toutes-activites{
+        margin-left: -6%;
+    }
     .activites{
         flex-direction: column;
+    }
+    .description2{
+        margin-bottom: -30px;
+        margin-left: 8%;
     }
     .petitcol1a, .petitcol1b, .petitcol2{
         height: 200px;
@@ -760,6 +782,15 @@ img{
         margin-left: 7%;
         margin-right: 5%;
     }
+    .fa-heart{
+        margin-left: 2%;
+    }
+    .infoIcon{
+        margin-left: 1%;
+    }
+    .intro{
+        margin-left: 2%;
+    }
     .placeholder {
         margin-right: 0;
         width: 170px;
@@ -767,8 +798,11 @@ img{
     .haute, .reservia, .iconinfo {
         margin-left: 0;
     }
-    .footer-text{
-        margin-right: 0;
+    h2{
+        font-size: 14px;
+    }
+    p, a{
+        font-size: 12px;
     }
     .footer-heading{
         margin-left: 10%;
@@ -781,10 +815,23 @@ img{
     .rightnav{
         padding: 0;
     }
+    .rightTo{
+        display: inline-block;
+        order: 1;
+    }
+    .rightTop1{
+        position: relative;
+        bottom: -50px;
+        left: -160px;
+    }
+    .rightTop2{
+        position: relative;
+        bottom: -50px;
+    }
     .snapshot{
         width: 100%;
     }
     .plus{
-        margin-left: 5%;
+        margin-left: 2%;
     }
 }
