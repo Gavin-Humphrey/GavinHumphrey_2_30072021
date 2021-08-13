@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Reservia</title>
+        <title>Projet 2 Reservia</title>
         <link rel="stylesheet" href="style01.css">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
         <style>
@@ -12,10 +12,10 @@
         </style> 
     </head>
 <body>
-    <!--First of take the navbar-->
+
     <header class="navbar">
         <div class="header_container">
-            <!--Put the logo inside the container-->
+           
             <img class="reservia" src="./images/logo/Reservia.svg" alt="Image logo">
             <nav>
                 <ul class="rightnav">
@@ -27,8 +27,8 @@
         </div>
     </header>
 
-    <!-- Search section -->
-    <div class="haute">
+    <!-- Filter section -->
+    <section id="filter-section">
         <div class="intro">
             <h1>Trouver votre hébergement pour des vacances de rêve</h1>
             <h5>En pleine centre ville ou en pleine nature</h5>
@@ -36,35 +36,34 @@
         <div class="search">
             <span class="infoIcone"><i style='font-size: 20px' class='fas'> &#xf3c5;</i></span>
             <div class="search-bar"></div>
-            <input class="placeholder" type="text" placeholder="Marseille, France" name="search"><button class="send" type="search">Rechercher</button><i class="fas fa-search"></i>
+            <input class="placeholder" type="text" placeholder="Marseille, France" name="search"><button class="send" type="submit">Rechercher</button><i class="fas fa-search"></i>
         </div>   
-    </div>
         
-    <!-- Filters section -->
-    <section id="filters">
-        <span class="titlefilter">Filtres</span>
-        <div class="innerFilters1">
-            <div class="icone"><i class="fas fa-money-bill-wave"></i></div>
-            <div class="textfilter">Economique</div>
+        <div class="filters">
+            <span class="titlefilter">Filtres</span>
+            <div class="innerFilters1">
+                <div class="icone"><i class="fas fa-money-bill-wave"></i></div>
+                <div class="textfilter">Economique</div>
+            </div>
+            <div class="innerFilters2">
+                <div class="icone"><i class="fas fa-child"></i></div>
+                <div class="textfilter">Familial</div>
+            </div>
+            <div class="innerFilters3">
+                <div class="icone"><i class="fas fa-heart"></i></div>
+                <div class="textfilter">Romantique</div>
+            </div>
+            <div class="innerFilters4">
+                <div class="icone"><i class="fas fa-dog"></i></div>
+                <div class="textfilter">Animaux autorisée</div>
+            </div>
         </div>
-        <div class="innerFilters2">
-            <div class="icone"><i class="fas fa-child"></i></div>
-            <div class="textfilter">Familial</div>
-        </div>
-        <div class="innerFilters3">
-            <div class="icone"><i class="fas fa-heart"></i></div>
-            <div class="textfilter">Romantique</div>
-        </div>
-        <div class="innerFilters4">
-            <div class="icone"><i class="fas fa-dog"></i></div>
-            <div class="textfilter">Animaux autorisée</div>
+    
+        <div class="infoIcon">
+            <div class="iconinfo"><i class="fas fa-info"></i></div>
+            <div class="info">Plus de 500 lodgements sont disponibles dans cette ville</div>
         </div>
     </section>
-    <div class="infoIcon">
-        <div class="iconinfo"><i class="fas fa-info"></i></div>
-        <div class="info">Plus de 500 lodgements sont disponibles dans cette ville</div>
-    </div>
-
     <!-- Accomodations section -->
     <section id="accomodations">
         <div class="containergauche">
@@ -228,7 +227,7 @@
     </section>
 
     <!-- FOOTER -->
-    <section class="footer">
+    <section id="footer">
         <div class="footerliste"></div>
         <div class="footer-heading footer-1">
             <h3>A propos</h3>

@@ -85,7 +85,7 @@ nav{
     font-family: 'Raleway', sans-serif;
     margin-right: 15px;
 }
-.haute{
+#filter-section{
     margin-left: 35px;
     margin-top: 50px;
 }
@@ -157,7 +157,7 @@ nav{
     align-items: center;
     font-weight: bold;
 }
-#filters{
+.filters{
     display: flex;
     flex-flow: row wrap;
     align-items: center;
@@ -171,10 +171,7 @@ nav{
     padding-left: 14px;
     margin-left: 20px;
     font-family: 'Raleway', sans-serif;
-}
-.filters{
-    display: flex;
-}   
+}  
 .innerFilters1{
     display: flex;
     margin: 20px 20px 20px 5px;
@@ -600,7 +597,7 @@ img{
 .topRight{
     text-align: left;
 }
-.footer{
+#footer{
     background-color: whitesmoke;
     display: flex;
     flex-direction: row;
@@ -719,7 +716,7 @@ img{
     .innerFilters4{
         margin-left: 10%;
     }
-    .footer{
+    #footer{
         width: 100%;
     }
     .footerliste{
@@ -840,7 +837,7 @@ img{
         right: 0;
         border-top: none;
     }
-    .footer {
+    #footer {
         flex-direction: column;
         margin-top: 30px;
     }
