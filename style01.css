@@ -18,21 +18,26 @@
 }
 h1{
     font-family: 'Raleway', sans-serif;
-    font-size: 20px;
-    font-weight: bolder;
+    font-size: 22px;
+    font-weight: bolder; 
 }
 h2{
     font-family: 'Raleway', sans-serif;
     font-size: 16px;
     font-weight: bolder;
-    
 }
 h3{
     font-family: 'Raleway', sans-serif;
     font-size: 14px;
-    font-weight: bold;
+    font-weight: bolder;
+    
 }
-h4, .rightnav, .footerliste{
+h4{
+    font-family: 'Raleway', sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+}
+h5, .rightnav, .footerliste{
     font-family: 'Raleway', sans-serif;
     font-weight: normal;
     font-size: small;
@@ -69,9 +74,11 @@ ul{
     color: #0065FC;
     font-weight: bolder;
 }
-.rightTop1:hover, .rightTop2:hover, .rightTop3:hover{
+.rightTop1:hover, .rightTop2:hover, .rightTop3:hover,
+.rightTop1:focus, .rightTop2:focus, .rightTop3:focus{
     cursor: pointer;
     color: rgb(70, 127, 192);
+    transform: scale(1.05);
 }
 nav{
     list-style: none;
@@ -269,7 +276,7 @@ nav{
 .icone:focus{
     transform: scale(1.1);
 }
-h2{
+h3{
     text-align: left;
     margin-left: 10px;
 }
@@ -351,6 +358,7 @@ img{
     height: 100px;
     margin-top: 2%;
     border-radius: 20px 20px 0px 0px;
+    object-fit: cover;
 }
 .snapshot:hover,
 .snapshot:focus{
@@ -509,9 +517,6 @@ img{
     box-shadow: 0px 2px 1px -1px rgb(0 0 0 / 20%), 0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%);
     transform: scale(1.05);
 }
-
-
-
 .petitcol1a{
     flex-direction: column;
     height: 45%;
@@ -629,7 +634,7 @@ img{
     cursor: pointer;
     color: rgb(70, 127, 192);;
 }
-.footer-heading h2{
+.footer-heading h3{
     margin-left: 0%;
 }
 
@@ -643,7 +648,7 @@ img{
     .containergauche{
         flex-direction: row;
     }
-    h3{
+    h4{
         font-size: 12px;
     }
     .hebergementmarseille{
@@ -687,7 +692,6 @@ img{
         padding-right: 20px;
 
     }
-   
     .search{
         width: 60%;
         margin-left: 0%;
@@ -774,7 +778,7 @@ img{
     .lieu{
         margin-bottom: 50px;
     }
-    h3{
+    h4{
         font-size: 10px;
     }
     .footerliste{
@@ -846,13 +850,13 @@ img{
     .snapshot{
         width: 40%;
     }
-    h1{
+    h2{
         font-size: 18px;
     }
-    h2{
+    h3{
         font-size: 16px;
     }
-    h3{
+    h4{
         font-size: 14px;
     }
     .aside1{
