@@ -1,18 +1,19 @@
 .body{
     background-color: #F2F2F2;
     font-family: 'Raleway', sans-serif;
-    margin: 0;
-    padding: 0;
+    margin: 10px;
+    padding: 0px;
 }    
 .header_container{
     display: flex;
 	align-items: center;
 	justify-content: space-between;
 	flex-wrap: wrap;
+    margin: 0px;
 }
 .reservia{
     padding-top: 0px;
-    padding-left: 10px;
+    margin: 5px;
     height: 60px;
     cursor: pointer;
 }
@@ -86,7 +87,7 @@ nav{
     margin-right: 15px;
 }
 #filter-section{
-    margin-left: 35px;
+    margin-left: 10px;
     margin-top: 50px;
 }
 .search{
@@ -98,11 +99,11 @@ nav{
     border-top: 1px solid rgb(214, 211, 211);
     border-bottom: 1px solid rgb(214, 211, 211);
     border-radius: 10px 10px 10px 10px;
-    padding: 0;
+    padding: 0px;
     margin-left: 0%;
 }
 .fa-search{
-    margin-left: -15%;
+    margin-left: -20%;
 }
 .placeholder{
     width: 60%;
@@ -120,7 +121,7 @@ nav{
     display: inline-block;
     padding-top: 5px;
     padding-bottom: 6px;
-    border-radius: 0 10px 10px 0;
+    border-radius: 0px 10px 10px 0px;
     font-size: 15px;
     cursor: pointer;
 }
@@ -135,7 +136,7 @@ nav{
     padding-top: 12px;
     padding-right: 15%;
     margin-right: -18%;
-    border-radius: 10px 0 0 10px;
+    border-radius: 10px 0px 0px 10px;
     background-color:#F2F2F2;
     border: none;  
     width: 5px;
@@ -145,26 +146,17 @@ nav{
     cursor: pointer;
     transform: scale(1.05);
 }
-.iconinfo:hover,
-.iconinfo:focus{
-    cursor: pointer;
-    transform: scale(1.05);
-    background-color: whitesmoke;
-}
-#filter{
-    width: auto;
-    display: flex;
-    align-items: center;
-    font-weight: bold;
-}
 .filters{
     display: flex;
     flex-flow: row wrap;
     align-items: center;
+    padding: 25px;
+    margin-left: -4%;
 }
 .textfilter{
-    margin-top: 5px;
     font-family: 'Raleway', sans-serif;
+    font-size: 13px;
+    padding-top: 10px;
 }
 .titlefilter{
     padding-right: 30px;
@@ -172,106 +164,33 @@ nav{
     margin-left: 20px;
     font-family: 'Raleway', sans-serif;
 }  
-.innerFilters1{
+.innerFilters{
     display: flex;
-    margin: 20px 20px 20px 5px;
+    padding-right: 10px;
+    margin: 5px;
     border: 1px solid rgb(214, 211, 211);
     border-radius: 20px;
-    width: 150px;
-    height: 30px;
-    padding-bottom: 3px;
-}
-.innerFilters1:hover,
-.innerFilters1:focus{
+    width: auto;
+    height: 35px;
     cursor: pointer;
+}
+.innerFilters:hover,
+.innerFilters:focus{
     transform: scale(1.05);
+    border: 2px solid #0065FC;
 }
-.innerFilters2{
-    display: flex;
-    margin: 20px 20px 20px 5px;
-    border:  1px solid rgb(214, 211, 211);
-    border-radius: 20px;
-    width: 110px;
-    height: 30px;
-    padding-bottom: 3px;  
-}
-.innerFilters2:hover,
-.innerFilters2:focus{
-    cursor: pointer;
-    transform: scale(1.05);
-}
-.innerFilters3{
-    display: flex;
-    margin: 20px 20px 20px 5px;
-    border:  1px solid rgb(214, 211, 211);
-    border-radius: 20px;
-    width: 140px;
-    height: 30px;
-    padding-bottom: 3px;
-}
-.innerFilters3:hover,
-.innerFilters3:focus{
-    cursor: pointer;
-    transform: scale(1.05);
-}
-.innerFilters4{
-    display: flex;
-    margin: 20px 20px 20px 5px;
-    border:  1px solid rgb(214, 211, 211);
-    border-radius: 20px;
-    width: 190px;
-    height: 30px;
-    padding-bottom: 3px;
-}
-.innerFilters4:hover,
-.innerFilters4:focus{
-    cursor: pointer;
-    transform: scale(1.05);
-}
-.textfilter:hover{
-    color: rgb(70, 127, 192);
-}
-.fa-dog{
-    background: #DEEBFF;
-    border-radius: 45%;
-    width: 35px;
-    height: 30px;
-    padding: 2px;
-    margin-bottom: 5px;
-    color:  #0065FC;
-    font-size: 25px;
-}
-.fa-money-bill-wave{
-    background: #DEEBFF;
-}
-.fa-money-bill-wave{
-    background: #DEEBFF;
-    border-radius: 45%;
-    padding: 4px;
-    color:  #0065FC;
+.innerFilters i{
+    color: #0065FC;
+    background-color: #DEEBFF;
     margin-right: 5px;
-    font-size: 25px;
+    border-radius: 50px;
+    padding: 10px; 
 }
-.fa-child{
-    background: #DEEBFF;
-    border-radius: 45%;
-    padding: 4px;
-    color:  #0065FC;
-    margin-right: 5px;
-    font-size: 27px;
-}
-.fa-heart{
-    background: #DEEBFF;
-    border-radius: 45%;
-    padding: 4px;
-    margin-top: 0px;
-    color:  #0065FC;
-    margin-right: 5px;
-    font-size: 25px;
-}
-.icone:hover,
-.icone:focus{
+.innerFilters i:hover,
+.innerFilters i:focus{
     transform: scale(1.1);
+    color: white;
+    background-color: #0065FC;
 }
 h3{
     text-align: left;
@@ -292,23 +211,27 @@ h3{
     color: #0065FC;
 }
 .star1{
-    color: gray;
-    margin-left: 0px;
+    color: grey;
+    margin-left: 0%;
 }
 .infoIcon{
     display: flex;
     align-items: baseline;
+    margin-left: -2%;
 }
 .iconinfo{
     margin-right: 10px;
     margin-left: 30px;
-    border: 1px solid #F2F2F2;
-    background-color:white;
+    border: 1px solid #0065FC;
+    background-color:#0065FC;
+    color: white;
     border-radius: 50px;
     width: 2px;
     height: 20px;
     padding-left: 10px;
     padding-right: 10px;
+    padding-top: 0px;
+    padding-bottom: 0px;
 }
 .info{
     font-family: 'Raleway', sans-serif;
@@ -316,7 +239,7 @@ h3{
 }
 .fa-info{
     font-size: 10px;
-    color: #0065FC;
+    
 }
 img{
     border-radius: 10px;
@@ -328,10 +251,12 @@ img{
     justify-content: space-between;
     width: 100%;
     margin-top: 16px;
+    margin-left: 0%;
+    margin-right: 0%;
 }
 .containergauche{
     border-radius: 20px;
-    background:whitesmoke;
+    background:#F2F2F2;
     padding-left: 20px;
     width: 65%;
 }
@@ -381,7 +306,7 @@ img{
 .hotelduport{
     border-radius: 20px 20px 0px 0px;
     margin-top: 5px;
-    margin-left: 0px;
+    margin-left: 0%;
     width: 95%;
     height: 100px;
 }
@@ -389,27 +314,27 @@ img{
     border-radius: 20px 20px 0px 0px;
     width: 95%;
     margin-top: 5px;
-    margin-left: 0px;
+    margin-left: 0%;
     height: 100px;
 }
 .hoteldelamer{
     border-radius: 20px 20px 0px 0px;
     width: 95%;
     margin-top: 5px;
-    margin-left: 0px;
+    margin-left: 0%;
     height: 100px;
 }
 .aubergelepanier{
     border-radius: 20px 20px 0px 0px;
     width: 95%;
     margin-top: 5px;
-    margin-left: 0px;
+    margin-left: 0%;
     height: 100px;
 }
 .hotelchezamina{
     border-radius: 20px 20px 0px 0px;
     width: 95%;
-    margin-left: 0px;
+    margin-left: 0%;
     margin-top: 5px;
 }
 .description1{
@@ -417,7 +342,7 @@ img{
 }
 .aside{
     border-radius: 20px;
-    background: whitesmoke;
+    background: #F2F2F2;
     width: 30%;
 }
 .aside1{
@@ -598,7 +523,7 @@ img{
     text-align: left;
 }
 #footer{
-    background-color: whitesmoke;
+    background-color: #F2F2F2;
     display: flex;
     flex-direction: row;
     width: 100%;
@@ -640,7 +565,7 @@ img{
     .search{
         width: 40%;
         display: flex;
-        margin-left: 0%;
+        margin: auto;
     }
     .containergauche{
         flex-direction: row;
@@ -759,7 +684,7 @@ img{
         width: 35%;
         margin-left: 8%;
     }
-    #toutes-activites{
+    #articles{
         width: 100%;
         margin-left: 0%;
         margin-right: 0%;
@@ -847,6 +772,9 @@ img{
     .snapshot{
         width: 40%;
     }
+    h1{
+        font-size: 20px;
+    }
     h2{
         font-size: 18px;
     }
@@ -861,7 +789,7 @@ img{
         width: 90%;
         margin-left: 4%;
     }
-    #toutes-activites{
+    #articles{
         width: 100%;
        
     }
