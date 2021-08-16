@@ -490,11 +490,13 @@ img{
     border-radius: 20px 20px 0px 0px;
     width: 100%;
     height: 115px;
+    object-fit: cover;
 }
 .frioul{
     border-radius: 20px 20px 0px 0px;
     width: 100%;
     height: 85px;
+    object-fit: cover;
 }
 .parcnational{
     border-radius: 20px 20px 0px 0px;
@@ -505,11 +507,13 @@ img{
     border-radius: 20px 20px 0px 0px;
     width: 100%;
     height: 100px;
+    object-fit: cover;
 }
 .parclongchamp{
     border-radius: 20px 20px 0px 0px;
     width: 100%;
     height: 100px;
+    object-fit: cover;
 }
 .lieu{
     margin-left: 16px;
