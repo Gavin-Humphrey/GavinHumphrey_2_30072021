@@ -254,7 +254,7 @@ img{
     margin-left: 0%;
     margin-right: 0%;
 }
-.containergauche{
+.section-container{
     border-radius: 20px;
     background:#F2F2F2;
     padding-left: 20px;
@@ -340,7 +340,7 @@ img{
 .description1{
     margin-left: 15px;
 }
-.aside{
+.asides{
     border-radius: 20px;
     background: #F2F2F2;
     width: 30%;
@@ -411,7 +411,7 @@ img{
     margin-bottom: 10px;
     margin-right: 40px;
 }
-.activites{
+.toutes-activites{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -526,7 +526,7 @@ img{
 .topRight{
     text-align: left;
 }
-#footer{
+#LeFooter{
     background-color: #F2F2F2;
     display: flex;
     flex-direction: row;
@@ -571,7 +571,7 @@ img{
         display: flex;
         margin: auto;
     }
-    .containergauche{
+    .section-container{
         flex-direction: row;
     }
     h4{
@@ -645,7 +645,7 @@ img{
     .innerFilters4{
         margin-left: 10%;
     }
-    #footer{
+    #LeFooter{
         width: 100%;
     }
     .footerliste{
@@ -665,7 +665,7 @@ img{
     #les-populaires-icon{
         margin-right: 5%;
     }
-    .aside{
+    .asides{
         width: 100%;
         margin-left: 0;
         margin-right: 0;
@@ -675,7 +675,7 @@ img{
         margin-left: 20%;
         margin-right: 20%;
     }
-    .containergauche{
+    .section-container{
         flex-direction: row;
         flex: 2;
         order: 2;
@@ -688,12 +688,12 @@ img{
         width: 35%;
         margin-left: 8%;
     }
-    #articles{
+    #activites{
         width: 100%;
         margin-left: 0%;
         margin-right: 0%;
     }
-    .activites{
+    .toutes-activites{
         margin: 0%;
         padding: 0%;
     }
@@ -766,7 +766,7 @@ img{
         right: 0;
         border-top: none;
     }
-    #footer {
+    #LeFooter {
         flex-direction: column;
         margin-top: 30px;
     }
@@ -793,11 +793,11 @@ img{
         width: 90%;
         margin-left: 4%;
     }
-    #articles{
+    #activites{
         width: 100%;
        
     }
-    .activites{
+    .toutes-activites{
         flex-direction: column;
         margin-top: 0px;
     }
@@ -885,11 +885,11 @@ img{
     .haute, .reservia, .iconinfo{
         margin-left: 0;
     }
-    .containergauche{
+    .section-container{
         width: 100%;
         margin-left: -2%;
     }
-    .aside{
+    .asides{
         width: 100%;
         margin-left: 0%;
     }
