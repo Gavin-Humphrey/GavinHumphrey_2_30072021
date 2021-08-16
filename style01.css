@@ -186,8 +186,8 @@ nav{
     border-radius: 50px;
     padding: 10px; 
 }
-.innerFilters i:hover,
-.innerFilters i:focus{
+.innerFilters:hover i,
+.innerFilters:focus i{
     transform: scale(1.1);
     color: white;
     background-color: #0065FC;
