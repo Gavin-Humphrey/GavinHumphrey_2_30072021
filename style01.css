@@ -38,7 +38,7 @@ h4{
     font-size: 12px;
     font-weight: normal;
 }
-h5, .rightnav, .footerliste{
+h5, .rightnav{
     font-family: 'Raleway', sans-serif;
     font-weight: normal;
     font-size: small;
@@ -566,7 +566,11 @@ img{
 .footer-heading h2{
     margin-left: 0%;
 }
-
+.footerliste{
+    font-family: 'Raleway', sans-serif;
+    font-weight: normal;
+    font-size: small;
+}
 /*-------- RESPONSIVE -------*/
 @media (max-width: 1200px){
     .search{
