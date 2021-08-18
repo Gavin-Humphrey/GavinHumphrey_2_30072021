@@ -1,8 +1,10 @@
-.body{
+html,body{
     background-color: #F2F2F2;
     font-family: 'Raleway', sans-serif;
     margin: 10px;
     padding: 0px;
+    max-width: 100%;
+    overflow-x: hidden;
 }    
 .header_container{
     display: flex;
@@ -91,7 +93,7 @@ nav{
     margin-top: 50px;
 }
 .search{
-    width: 40%;
+    width: 30%;
     display: flex;
     height: 45px;
     justify-content: space-between;
@@ -133,18 +135,12 @@ nav{
 .infoIcone{
     display: flex;
     padding-left: 10%;
-    padding-top: 12px;
-    padding-right: 15%;
+    padding-top: 8px;
+    padding-right: 18%;
     margin-right: -18%;
     border-radius: 10px 0px 0px 10px;
-    background-color:#F2F2F2;
-    border: none;  
+    border: 2px solid #F2F2F2;  
     width: 5px;
-}
-.infoIcone:hover,
-.infoIcone:focus{
-    cursor: pointer;
-    transform: scale(1.05);
 }
 .filters{
     display: flex;
