@@ -1,11 +1,13 @@
-html,body{
-    background-color: #F2F2F2;
-    font-family: 'Raleway', sans-serif;
-    margin: 10px;
-    padding: 0px;
+html, body{
     max-width: 100%;
     overflow-x: hidden;
-}    
+}   
+.body{
+    background-color: #F2F2F2;
+    font-family: 'Raleway', sans-serif;
+    margin: 0px;
+    padding: 0px;
+} 
 .header_container{
     display: flex;
 	align-items: center;
@@ -138,9 +140,8 @@ nav{
     padding-top: 8px;
     padding-right: 18%;
     margin-right: -18%;
-    border-radius: 10px 0px 0px 10px;
-    border: 2px solid #F2F2F2;  
-    width: 5px;
+    background-color: #F2F2F2;
+    border-radius: 10px 0 0 10px;
 }
 .filters{
     display: flex;
@@ -668,8 +669,8 @@ img{
     }
     #asides{
         width: 100%;
-        margin-left: 0;
-        margin-right: 0;
+        margin-left: 0%;
+        margin-right: 0%;
     }
     .aside1{
         width: 60%;
@@ -730,7 +731,7 @@ img{
         width: 120%;
         height: 3px;
         bottom: 0;
-        left: -30%;
+        left: -40%;
         background-color: #0065fc;
         transform-origin: bottom left;
     }
